@@ -185,17 +185,12 @@ nav.links a.cta:hover { background: var(--teal); color: var(--charcoal); }
 
 /* ---------- STATS ---------- */
 .section--stats { position: relative; background: var(--paper); }
+.section--stats .wrap { width: min(1640px, 96%); }
 .stats-panel {
-  --bevel: 28px;
   position: relative; color: var(--cream); background: var(--charcoal);
-  padding: clamp(3rem, 6vw, 5rem) clamp(1.6rem, 5vw, 4rem);
-  clip-path: polygon(
-    var(--bevel) 0, calc(100% - var(--bevel)) 0,
-    100% var(--bevel), 100% calc(100% - var(--bevel)),
-    calc(100% - var(--bevel)) 100%, var(--bevel) 100%,
-    0 calc(100% - var(--bevel)), 0 var(--bevel)
-  );
-  filter: drop-shadow(0 28px 55px rgba(0,0,0,.30));
+  padding: clamp(3rem, 6vw, 5rem) clamp(2rem, 6vw, 5.5rem);
+  border-radius: 36px;
+  box-shadow: 0 28px 55px rgba(0,0,0,.30);
   overflow: hidden;
 }
 .stats-panel .bg {

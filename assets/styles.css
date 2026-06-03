@@ -74,9 +74,19 @@ nav.links a.cta:hover { background: var(--teal); color: var(--charcoal); }
   color: var(--cream); overflow: hidden; padding: 7rem 0 5rem;
 }
 .hero-bg {
-  position: absolute; inset: 0; z-index: 0;
+  position: absolute; inset: -6%; z-index: 0;
   background: url('bg-nyc.jpg') center/cover no-repeat;
   filter: grayscale(100%);
+  transform: scale(1.12);
+  will-change: transform;
+  animation: heroPan 34s ease-in-out infinite alternate;
+}
+@keyframes heroPan {
+  0%   { transform: scale(1.12) translate3d(0, 0, 0); }
+  100% { transform: scale(1.2) translate3d(-3.5%, -2.5%, 0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-bg { animation: none; transform: scale(1.12); }
 }
 .hero-bg::after {
   content: ""; position: absolute; inset: 0;
@@ -114,7 +124,7 @@ nav.links a.cta:hover { background: var(--teal); color: var(--charcoal); }
   box-shadow: 0 0 90px rgba(93,168,155,.35);
 }
 .hero-portrait img {
-  position: relative; z-index: 1; width: clamp(260px, 30vw, 440px); aspect-ratio: 3/4;
+  position: relative; z-index: 1; width: clamp(210px, 22vw, 310px); aspect-ratio: 3/4;
   object-fit: cover; object-position: top center;
   border: 6px solid var(--charcoal);
 }

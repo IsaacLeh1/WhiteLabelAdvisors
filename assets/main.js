@@ -31,6 +31,26 @@ if (filters) {
   });
 }
 
+// Testimonials carousel
+const carousel = document.getElementById('clientsCarousel');
+if (carousel) {
+  const slides = Array.from(carousel.querySelectorAll('.client-slide'));
+  const dots = Array.from(carousel.querySelectorAll('.client-dots button'));
+  let i = 0, timer;
+  function show(n) {
+    i = (n + slides.length) % slides.length;
+    slides.forEach((s, k) => s.classList.toggle('active', k === i));
+    dots.forEach((d, k) => d.classList.toggle('active', k === i));
+  }
+  function reset() { clearInterval(timer); timer = setInterval(() => show(i + 1), 9000); }
+  const prev = carousel.querySelector('.client-arrow.prev');
+  const next = carousel.querySelector('.client-arrow.next');
+  if (prev) prev.addEventListener('click', () => { show(i - 1); reset(); });
+  if (next) next.addEventListener('click', () => { show(i + 1); reset(); });
+  dots.forEach((d, k) => d.addEventListener('click', () => { show(k); reset(); }));
+  show(0); reset();
+}
+
 // Contact form (mailto fallback — no backend)
 function handleSubmit(e) {
   e.preventDefault();

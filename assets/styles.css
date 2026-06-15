@@ -288,8 +288,8 @@ nav.links a.cta:hover { background: var(--teal); color: var(--charcoal); }
 .industries { display: flex; flex-wrap: wrap; gap: 0.65rem; margin-top: 2.2rem; justify-content: center; }
 .industries.left { justify-content: flex-start; }
 .industries span {
-  font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-dark);
-  border: 1px solid rgba(93,168,155,.35); padding: 0.55rem 1.05rem; border-radius: 999px;
+  font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: #cfd2cf;
+  border: 1px solid rgba(143,196,186,.4); padding: 0.55rem 1.05rem; border-radius: 999px;
   transition: background .25s, color .25s, border-color .25s, transform .2s;
 }
 .industries span:hover { background: var(--teal); color: #fff; border-color: var(--teal); transform: translateY(-2px); }
@@ -297,11 +297,13 @@ nav.links a.cta:hover { background: var(--teal); color: var(--charcoal); }
 /* ---------- SERVE ---------- */
 .serve-groups { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.8rem; max-width: 1000px; margin: 0 auto; align-items: start; }
 .serve-col {
-  background: #fff; border: 1px solid #e8e5dc; border-radius: 20px; padding: 3rem 2.6rem;
-  box-shadow: 0 10px 30px rgba(0,0,0,.04); text-align: center;
-  transition: transform .35s ease, box-shadow .35s ease;
+  background: rgba(255,255,255,0.055);
+  -webkit-backdrop-filter: blur(7px); backdrop-filter: blur(7px);
+  border: 1px solid rgba(143,196,186,.2); border-radius: 20px; padding: 3rem 2.6rem;
+  box-shadow: 0 18px 45px rgba(0,0,0,.22); text-align: center;
+  transition: transform .35s ease, box-shadow .35s ease, background .35s ease;
 }
-.serve-col:hover { transform: translateY(-6px); box-shadow: 0 24px 50px rgba(0,0,0,.08); }
+.serve-col:hover { transform: translateY(-6px); background: rgba(255,255,255,0.085); box-shadow: 0 28px 55px rgba(0,0,0,.32); }
 .serve-col h3 { font-size: 1.7rem; margin-bottom: 1.4rem; }
 .serve-col h3::after { content: ""; display: block; width: 44px; height: 2px; background: var(--teal); margin: .8rem auto 0; }
 .serve-col .industries { margin-top: 0; }

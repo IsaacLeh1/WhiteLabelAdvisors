@@ -365,7 +365,7 @@ footer .fnav a { font-size: 0.74rem; letter-spacing: 0.18em; text-transform: upp
 footer .fnav a:hover { color: var(--teal-light); }
 footer .copy { font-size: 0.72rem; letter-spacing: 0.1em; color: var(--gray-dark); }
 
-.pill-tag { font-family: var(--serif); font-style: italic; color: var(--teal-light); font-size: 1.3rem; text-align:center; letter-spacing: .02em; }
+.pill-tag { font-family: var(--serif); font-style: italic; color: var(--teal-light); font-size: clamp(1.8rem, 4vw, 2.9rem); text-align:center; letter-spacing: .02em; }
 
 /* ---------- BLOG ---------- */
 .blog-filters { display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: center; margin-bottom: 3rem; }

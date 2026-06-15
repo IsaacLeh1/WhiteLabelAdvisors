@@ -44,6 +44,22 @@ if ('IntersectionObserver' in window && reveals.length) {
   reveals.forEach((el) => el.classList.add('in'));
 }
 
+// About photo carousel (Christine actively working)
+const aboutCar = document.getElementById('aboutCarousel');
+if (aboutCar) {
+  const imgs = Array.from(aboutCar.querySelectorAll('img'));
+  const dots = Array.from(document.querySelectorAll('#aboutDots button'));
+  let j = 0, t;
+  function go(n) {
+    j = (n + imgs.length) % imgs.length;
+    imgs.forEach((im, k) => im.classList.toggle('active', k === j));
+    dots.forEach((d, k) => d.classList.toggle('active', k === j));
+  }
+  function loop() { clearInterval(t); t = setInterval(() => go(j + 1), 4200); }
+  dots.forEach((d, k) => d.addEventListener('click', () => { go(k); loop(); }));
+  loop();
+}
+
 // Testimonials carousel
 const carousel = document.getElementById('clientsCarousel');
 if (carousel) {

@@ -55,7 +55,7 @@ if (aboutCar) {
     imgs.forEach((im, k) => im.classList.toggle('active', k === j));
     dots.forEach((d, k) => d.classList.toggle('active', k === j));
   }
-  function loop() { clearInterval(t); t = setInterval(() => go(j + 1), 4200); }
+  function loop() { clearInterval(t); t = setInterval(() => go(j + 1), 6000); }
   dots.forEach((d, k) => d.addEventListener('click', () => { go(k); loop(); }));
   loop();
 }

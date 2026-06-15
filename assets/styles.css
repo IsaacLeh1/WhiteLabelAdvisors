@@ -317,21 +317,22 @@ nav.links a.cta:hover { background: var(--teal); color: var(--charcoal); }
 .serve-divider { width: 64px; height: 1px; background: rgba(93,168,155,.5); margin: 4.5rem auto; }
 
 /* ---------- TESTIMONIALS CAROUSEL ---------- */
-.section--clients { position: relative; overflow: hidden; }
-.section--clients .bg { position: absolute; inset: 0; background: url('bg-travel.jpg') center/cover; filter: grayscale(100%); opacity: .10; }
+.section--clients { position: relative; overflow: hidden; background: var(--paper); }
+.section--clients .bg { position: absolute; inset: 0; background: url('bg-travel.jpg') center/cover; filter: grayscale(100%); opacity: .05; }
 .section--clients .wrap { position: relative; z-index: 1; }
 .clients-carousel { max-width: 940px; margin: 0 auto; position: relative; }
-.client-track { position: relative; }
-.client-slide { display: none; text-align: center; }
-.client-slide.active { display: block; animation: fadeQuote .55s ease; }
-@keyframes fadeQuote { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+/* Slides share one grid cell so the track height = tallest quote — switching
+   quotes never changes layout height, so the page stays still. */
+.client-track { display: grid; }
+.client-slide { grid-area: 1 / 1; text-align: center; opacity: 0; visibility: hidden; transition: opacity .5s ease, visibility .5s ease; }
+.client-slide.active { opacity: 1; visibility: visible; }
 .client-slide .qmark { font-family: var(--serif); font-size: 5rem; line-height: .35; color: var(--teal); display: block; margin-bottom: .8rem; }
 .client-slide blockquote {
-  font-family: var(--serif); font-style: italic; font-size: clamp(1.1rem, 1.9vw, 1.55rem);
-  line-height: 1.55; color: var(--cream); margin: 0 auto 1.6rem; max-width: 64ch;
+  font-family: var(--serif); font-style: italic; font-size: clamp(1.15rem, 2vw, 1.65rem);
+  line-height: 1.55; color: var(--charcoal); margin: 0 auto 1.6rem; max-width: 64ch;
 }
 .client-slide cite {
-  font-style: normal; letter-spacing: .26em; text-transform: uppercase; font-size: .72rem; color: var(--teal-light);
+  font-style: normal; letter-spacing: .26em; text-transform: uppercase; font-size: .72rem; color: var(--teal-deep);
   display: inline-flex; align-items: center; gap: .8rem;
 }
 .client-slide cite::before { content: ""; width: 32px; height: 1px; background: var(--teal); }
@@ -339,11 +340,12 @@ nav.links a.cta:hover { background: var(--teal); color: var(--charcoal); }
 .client-dots button { width: 11px; height: 11px; border-radius: 50%; border: 1px solid var(--teal); background: transparent; cursor: pointer; padding: 0; transition: all .25s; }
 .client-dots button.active { background: var(--teal); transform: scale(1.15); }
 .client-arrow {
-  position: absolute; top: 34%; z-index: 4; background: rgba(28,29,29,.4); border: 1px solid rgba(143,196,186,.4);
-  color: var(--teal-light); width: 46px; height: 46px; border-radius: 50%; cursor: pointer;
+  position: absolute; top: 34%; z-index: 4; background: #fff; border: 1px solid rgba(93,168,155,.45);
+  color: var(--teal-deep); width: 46px; height: 46px; border-radius: 50%; cursor: pointer;
   font-size: 1.1rem; line-height: 1; transition: all .25s; display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
 }
-.client-arrow:hover { background: var(--teal); color: var(--charcoal); border-color: var(--teal); }
+.client-arrow:hover { background: var(--teal); color: #fff; border-color: var(--teal); }
 .client-arrow.prev { left: -8px; }
 .client-arrow.next { right: -8px; }
 @media (max-width: 980px) { .client-arrow { display: none; } }

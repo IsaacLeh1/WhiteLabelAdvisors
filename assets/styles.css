@@ -254,9 +254,11 @@ nav.links a.cta:hover { background: var(--teal); color: var(--charcoal); }
 .svc { background: var(--charcoal-2); padding: 3rem 2.2rem; transition: background .35s; }
 .svc:hover { background: var(--charcoal-3); }
 .svc .ico {
-  width: 46px; height: 46px; transform: rotate(45deg); margin-bottom: 1.6rem;
+  width: 52px; height: 52px; transform: rotate(45deg); margin-bottom: 1.6rem;
   background: linear-gradient(135deg, var(--teal), var(--teal-deep));
+  display: flex; align-items: center; justify-content: center;
 }
+.svc .ico svg { transform: rotate(-45deg); width: 24px; height: 24px; color: var(--cream); }
 .svc h3 { font-size: 1.55rem; color: var(--cream); margin-bottom: 0.4rem; }
 .svc .tag { font-size: 0.66rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--teal-light); margin-bottom: 1rem; display:block; }
 .svc p { color: #b3b6b3; font-size: 0.96rem; }

@@ -31,6 +31,23 @@ if (filters) {
   });
 }
 
+// === Circle community link =================================================
+// Paste the Circle.io community URL here once it's ready. Every "Community"
+// link on the site (nav + footer, all pages) reads from this one value.
+const COMMUNITY_URL = ''; // e.g. 'https://community.whitelabeladvisors.com'
+document.querySelectorAll('.community-link').forEach((a) => {
+  if (COMMUNITY_URL) {
+    a.href = COMMUNITY_URL;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    a.removeAttribute('aria-disabled');
+  } else {
+    a.setAttribute('aria-disabled', 'true');
+    a.title = 'Community — coming soon';
+    a.addEventListener('click', (e) => e.preventDefault());
+  }
+});
+
 // Scroll-reveal (premium fade-up as sections enter view)
 const reveals = document.querySelectorAll('.reveal');
 if ('IntersectionObserver' in window && reveals.length) {

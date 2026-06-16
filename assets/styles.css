@@ -402,9 +402,18 @@ footer .copy { font-size: 0.72rem; letter-spacing: 0.1em; color: var(--gray-dark
 .pill-tag {
   font-family: var(--display); font-weight: 700; font-style: normal; text-transform: uppercase;
   font-size: clamp(1.5rem, 3.4vw, 2.5rem); text-align: center; letter-spacing: .12em;
-  background: linear-gradient(100deg, var(--teal-deep) 0%, var(--teal) 45%, var(--sky) 100%);
+  background: linear-gradient(90deg, var(--teal-deep), var(--teal), var(--sky), var(--teal), var(--teal-deep));
+  background-size: 200% auto;
   -webkit-background-clip: text; background-clip: text;
   -webkit-text-fill-color: transparent; color: transparent;
+  animation: tagShimmer 9s linear infinite;
+}
+@keyframes tagShimmer {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pill-tag { animation: none; }
 }
 
 /* ---------- COMMUNITY EMBED ---------- */

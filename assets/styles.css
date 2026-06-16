@@ -406,7 +406,7 @@ footer .copy { font-size: 0.72rem; letter-spacing: 0.1em; color: var(--gray-dark
   background-size: 200% auto;
   -webkit-background-clip: text; background-clip: text;
   -webkit-text-fill-color: transparent; color: transparent;
-  animation: tagShimmer 9s linear infinite;
+  animation: tagShimmer 4s linear infinite;
 }
 @keyframes tagShimmer {
   0%   { background-position: 0% 50%; }

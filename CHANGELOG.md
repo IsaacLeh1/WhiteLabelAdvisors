@@ -4,10 +4,10 @@ Tracking of major changes to the site and the time invested in building it.
 
 - **Repository:** https://github.com/IsaacLeh1/WhiteLabelAdvisors
 - **Stack:** Static site — HTML, CSS, vanilla JS (no build step); deployed on Render
-- **Pages:** `index.html` (home), `engagements.html`, `blog.html`; shared `assets/styles.css` + `assets/main.js`
+- **Pages:** `index.html` (home), `engagements.html`, `blog.html`, `community.html`; shared `assets/styles.css` + `assets/main.js`
 
 > **About these hours:** The total reflects the actual time invested in the
-> project — **~12 hours** — including work that happens outside of commits:
+> project — **~13 hours** — including work that happens outside of commits:
 > exploring and extracting the brand assets, design iteration, content review,
 > testing, and revisions. The per-change figures below are proportional
 > estimates that distribute that time across the major pieces of work; adjust
@@ -19,9 +19,9 @@ Tracking of major changes to the site and the time invested in building it.
 
 | Metric | Value |
 | --- | --- |
-| Total time | **~12 hours** |
-| Commits | 30 |
-| Pages built | 3 |
+| Total time | **~13 hours** |
+| Commits | 36 |
+| Pages built | 4 |
 
 ---
 
@@ -47,6 +47,10 @@ Tracking of major changes to the site and the time invested in building it.
 | **Modalities & Who We Serve polish** — enlarged/centered the Modalities cards; restyled Who We Serve with cards and interactive pill chips | ~0.15 hr | `139d11a` |
 | **Restructure & UX** — moved Who We Serve to the Engagements page, fixed the carousel page-jump (constant height), and rebalanced the homepage section flow | ~0.20 hr | `4d32c04` |
 | **Frosted serve cards** — frosted, semi-transparent Audience/Industries boxes on Engagements | ~0.10 hr | `87b1cc1` |
+| **Contact routing** — Engagements "Contact Us" now links to the homepage contact section | ~0.05 hr | `50dc8ed` |
+| **Light powder-blue accent** — introduced a secondary `--sky` color sampled from 1.png across diamonds, hero accent, figures, tags, tagline & button hovers | ~0.30 hr | `10a98d1` |
+| **Tagline restyle** — "Simple. Sophisticated. Solutions." set in bold uppercase (non-italic) for more emphasis | ~0.05 hr | (this update) |
+| **Community / Circle** — added a Community tab (nav + footer, all pages) and a dedicated community page that embeds the Circle.io community in an on-site container, wired through a single `COMMUNITY_URL` constant | ~0.60 hr | `e33504d`, (this update) |
 
 
 ---

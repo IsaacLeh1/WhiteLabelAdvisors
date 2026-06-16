@@ -31,22 +31,26 @@ if (filters) {
   });
 }
 
-// === Circle community link =================================================
-// Paste the Circle.io community URL here once it's ready. Every "Community"
-// link on the site (nav + footer, all pages) reads from this one value.
+// === Circle community embed ================================================
+// Paste the Circle.io community URL here once it's ready. The community page
+// (community.html) embeds it in a container; until then it shows a placeholder.
 const COMMUNITY_URL = ''; // e.g. 'https://community.whitelabeladvisors.com'
-document.querySelectorAll('.community-link').forEach((a) => {
+const cFrame = document.getElementById('communityFrame');
+if (cFrame) {
+  const placeholder = document.getElementById('communityPlaceholder');
+  const note = document.getElementById('communityNote');
+  const openLinks = document.querySelectorAll('.community-open');
   if (COMMUNITY_URL) {
-    a.href = COMMUNITY_URL;
-    a.target = '_blank';
-    a.rel = 'noopener';
-    a.removeAttribute('aria-disabled');
+    cFrame.src = COMMUNITY_URL;
+    openLinks.forEach((a) => { a.href = COMMUNITY_URL; a.target = '_blank'; a.rel = 'noopener'; });
+    if (placeholder) placeholder.style.display = 'none';
+    if (note) note.style.display = 'block';
   } else {
-    a.setAttribute('aria-disabled', 'true');
-    a.title = 'Community — coming soon';
-    a.addEventListener('click', (e) => e.preventDefault());
+    cFrame.style.display = 'none';
+    if (placeholder) placeholder.style.display = 'flex';
+    if (note) note.style.display = 'none';
   }
-});
+}
 
 // Scroll-reveal (premium fade-up as sections enter view)
 const reveals = document.querySelectorAll('.reveal');

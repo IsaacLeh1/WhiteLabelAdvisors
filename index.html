@@ -12,7 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/styles.css" />
 </head>
-<body>
+<body data-move-group="page">
 
 <!-- ================= NAV ================= -->
 <header class="nav" id="nav">
@@ -30,24 +30,25 @@
 </header>
 
 <!-- ================= HERO ================= -->
-<section class="hero" id="top">
+<section class="hero" id="top" data-move="hero" data-move-in="page">
   <div class="hero-bg"></div>
   <div class="wrap">
     <div class="hero-copy reveal">
-      <span class="eyebrow">Amplifying People &amp; Things</span>
-      <h1>Redefining Business Strategy with <em>Human Intelligence</em></h1>
-      <p class="lead">A Human Capital advisory firm empowering high-growth organizations to unlock their full potential — through their people.</p>
+      <span class="eyebrow" data-edit="hero-eyebrow">Amplifying People &amp; Things</span>
+      <h1 data-edit="hero-title">Redefining Business Strategy with <em>Human Intelligence</em></h1>
+      <p data-edit="added-0-428104" style="position: relative; left: 206px; top: -13px;">test</p>
+      <p class="lead" data-edit="hero-lead">A Human Capital advisory firm empowering high-growth organizations to unlock their full potential — through their people.</p>
       <div class="actions">
         <a href="#contact" class="btn btn--solid">Start a Conversation</a>
         <a href="#modalities" class="btn btn--ghost">Our Modalities</a>
       </div>
     </div>
   </div>
-  <div class="locale">Salt Lake City Based &nbsp;|&nbsp; World Wide Service</div>
+  <div class="locale" data-edit="hero-locale">Salt Lake City Based &nbsp;|&nbsp; World Wide Service</div>
 </section>
 
 <!-- ================= ABOUT (THE FIRM) ================= -->
-<section class="section" id="about">
+<section class="section" id="about" data-move="about" data-move-in="page">
   <div class="wrap">
     <div class="about-grid">
       <div class="about-portrait reveal">
@@ -64,118 +65,118 @@
           <button aria-label="Photo 3"></button>
         </div>
         <div class="badge">
-          <b>Christine Wzorek</b>
-          <small>Founder &amp; CEO</small>
+          <b data-edit="about-name">Christine Wzorek</b>
+          <small data-edit="about-role">Founder &amp; CEO</small>
         </div>
       </div>
       <div class="about-text reveal d1">
-        <span class="eyebrow">Journeys</span>
-        <h2 style="font-size:clamp(2rem,4.5vw,3.2rem); margin:.8rem 0 .6rem;">Welcome to White Label Advisors</h2>
-        <p style="font-family:var(--serif); font-style:italic; color:var(--teal-deep); font-size:clamp(1.15rem,2vw,1.5rem); line-height:1.4; margin-bottom:1.6rem;">Where Innovation Leads a Human-Centric Growth Journey</p>
-        <p>At White Label Advisors, we're trailblazers in advising Human Capital strategies, empowering high-growth organizations to unlock their full potential, through their people. We provide the perfect blend of data-driven insights, predicated success strategies, and human-centered solutions.</p>
-        <p>What sets us apart? Our people-first philosophy. We're not just advisors; we're your partners in growth. By aligning talent, operational excellence, financial sustainability, and value perpetuity, we pool our collective strengths to drive innovation and deliver tangible returns to the bottom line.</p>
-        <p>We provide customized dashboards, strategic analyses, and pioneering solutions that align talent and people with your business strategy. The result? Enhancing productivity, accelerating growth, and multiplying value to gain a competitive edge that keeps you leading relevancy.</p>
-        <p>Join us in reshaping the future of business. With White Label Advisors, you're not just growing — you're evolving into a human-centric powerhouse.</p>
+        <span class="eyebrow" data-edit="about-eyebrow">Journeys</span>
+        <h2 data-edit="about-heading" style="font-size:clamp(2rem,4.5vw,3.2rem); margin:.8rem 0 .6rem;">Welcome to White Label Advisors</h2>
+        <p data-edit="about-subhead" style="font-family:var(--serif); font-style:italic; color:var(--teal-deep); font-size:clamp(1.15rem,2vw,1.5rem); line-height:1.4; margin-bottom:1.6rem;">Where Innovation Leads a Human-Centric Growth Journey</p>
+        <p data-edit="about-p1">At White Label Advisors, we're trailblazers in advising Human Capital strategies, empowering high-growth organizations to unlock their full potential, through their people. We provide the perfect blend of data-driven insights, predicated success strategies, and human-centered solutions.</p>
+        <p data-edit="about-p2">What sets us apart? Our people-first philosophy. We're not just advisors; we're your partners in growth. By aligning talent, operational excellence, financial sustainability, and value perpetuity, we pool our collective strengths to drive innovation and deliver tangible returns to the bottom line.</p>
+        <p data-edit="about-p3">We provide customized dashboards, strategic analyses, and pioneering solutions that align talent and people with your business strategy. The result? Enhancing productivity, accelerating growth, and multiplying value to gain a competitive edge that keeps you leading relevancy.</p>
+        <p data-edit="about-p4">Join us in reshaping the future of business. With White Label Advisors, you're not just growing — you're evolving into a human-centric powerhouse.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ================= MODALITIES ================= -->
-<section class="section section--charcoal2" id="modalities">
+<section class="section section--charcoal2" id="modalities" data-move="modalities" data-move-in="page">
   <div class="wrap">
     <div class="head center reveal">
-      <span class="eyebrow">Our Modalities</span>
-      <h2>How We Create Value</h2>
-      <p>Three integrated modalities that link Strategy, Financials, and Outcomes — so value permeates the organization and lands at the bottom line.</p>
+      <span class="eyebrow" data-edit="mod-eyebrow">Our Modalities</span>
+      <h2 data-edit="mod-heading">How We Create Value</h2>
+      <p data-edit="mod-intro">Three integrated modalities that link Strategy, Financials, and Outcomes — so value permeates the organization and lands at the bottom line.</p>
     </div>
-    <div class="svc-grid">
-      <div class="svc reveal">
+    <div class="svc-grid" data-move-group="modality-cards">
+      <div class="svc reveal" data-move="mod1" data-move-in="modality-cards">
         <div class="ico"></div>
         <span class="tag">Modality 01</span>
-        <h3>Quantification</h3>
-        <p>Our strategies empower your people as capable, meaningful contributors — aligning performance, enhancing productivity, and generating quantifiable outcomes.</p>
+        <h3 data-edit="mod1-title">Quantification</h3>
+        <p data-edit="mod1-body">Our strategies empower your people as capable, meaningful contributors — aligning performance, enhancing productivity, and generating quantifiable outcomes.</p>
       </div>
-      <div class="svc reveal d1">
+      <div class="svc reveal d1" data-move="mod2" data-move-in="modality-cards">
         <div class="ico"></div>
         <span class="tag">Modality 02</span>
-        <h3>Correlation</h3>
-        <p>We assess your company's unique optimization opportunities in three areas: Business Life Cycle, Maturity Model, and Financial Strategy + key Business Verticals.</p>
+        <h3 data-edit="mod2-title">Correlation</h3>
+        <p data-edit="mod2-body">We assess your company's unique optimization opportunities in three areas: Business Life Cycle, Maturity Model, and Financial Strategy + key Business Verticals.</p>
       </div>
-      <div class="svc reveal d2">
+      <div class="svc reveal d2" data-move="mod3" data-move-in="modality-cards">
         <div class="ico"></div>
         <span class="tag">Modality 03</span>
-        <h3>Amplification</h3>
-        <p>We align your short-term and long-term business strategy for continuity across all core functions, plus talent efforts and workforce upskilling.</p>
+        <h3 data-edit="mod3-title">Amplification</h3>
+        <p data-edit="mod3-body">We align your short-term and long-term business strategy for continuity across all core functions, plus talent efforts and workforce upskilling.</p>
       </div>
     </div>
-    <p class="pill-tag" style="margin-top:3rem;">Simple. Sophisticated. Solutions.</p>
+    <p class="pill-tag" data-edit="mod-pill" style="margin-top:3rem;">Simple. Sophisticated. Solutions.</p>
   </div>
 </section>
 
 <!-- ================= APPROACH ================= -->
-<section class="section" id="approach">
+<section class="section" id="approach" data-move="approach" data-move-in="page">
   <div class="wrap">
     <div class="head center reveal">
-      <span class="eyebrow">Our Approach</span>
-      <h2>The Human Intelligence Model</h2>
-      <p>A proven, repeatable process for turning Human Capital into a core business asset.</p>
+      <span class="eyebrow" data-edit="approach-eyebrow">Our Approach</span>
+      <h2 data-edit="approach-heading">The Human Intelligence Model</h2>
+      <p data-edit="approach-intro">A proven, repeatable process for turning Human Capital into a core business asset.</p>
     </div>
-    <div class="approach-grid">
-      <div class="step reveal">
+    <div class="approach-grid" data-move-group="approach-steps">
+      <div class="step reveal" data-move="step1" data-move-in="approach-steps">
         <div class="no">01</div>
-        <h3>Understand Your Business</h3>
-        <p>Through our Correlated Overlay model, we assess your company's unique optimization opportunities across three categories:</p>
+        <h3 data-edit="step1-title">Understand Your Business</h3>
+        <p data-edit="step1-body">Through our Correlated Overlay model, we assess your company's unique optimization opportunities across three categories:</p>
         <ul>
-          <li>Business Life Cycle</li>
-          <li>Maturity Model</li>
-          <li>Financial Strategy</li>
+          <li data-edit="step1-li1">Business Life Cycle</li>
+          <li data-edit="step1-li2">Maturity Model</li>
+          <li data-edit="step1-li3">Financial Strategy</li>
         </ul>
       </div>
-      <div class="step reveal d1">
+      <div class="step reveal d1" data-move="step2" data-move-in="approach-steps">
         <div class="no">02</div>
-        <h3>Map Positive Behaviors</h3>
-        <p>Through our Social Cohesion exercise with leadership, we identify and define foundational principles:</p>
+        <h3 data-edit="step2-title">Map Positive Behaviors</h3>
+        <p data-edit="step2-body">Through our Social Cohesion exercise with leadership, we identify and define foundational principles:</p>
         <ul>
-          <li>Acceptance &amp; Accountability</li>
-          <li>Behaviors &amp; Diversity</li>
-          <li>Performance &amp; Transparency</li>
+          <li data-edit="step2-li1">Acceptance &amp; Accountability</li>
+          <li data-edit="step2-li2">Behaviors &amp; Diversity</li>
+          <li data-edit="step2-li3">Performance &amp; Transparency</li>
         </ul>
       </div>
-      <div class="step reveal d2">
+      <div class="step reveal d2" data-move="step3" data-move-in="approach-steps">
         <div class="no">03</div>
-        <h3>Align Business Strategy</h3>
-        <p>It is the people within the organization that produce the deliverables. We align short- and long-term strategy to the HR program, creating continuity across all core functions.</p>
+        <h3 data-edit="step3-title">Align Business Strategy</h3>
+        <p data-edit="step3-body">It is the people within the organization that produce the deliverables. We align short- and long-term strategy to the HR program, creating continuity across all core functions.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ================= STATS ================= -->
-<section class="section section--stats">
+<section class="section section--stats" data-move="stats" data-move-in="page">
   <div class="stats-bg"></div>
   <div class="wrap">
     <div class="stats-panel reveal">
       <div class="stats-content">
         <div class="head center">
-          <span class="eyebrow">By The Numbers</span>
-          <h2>Proven, Measurable Impact</h2>
+          <span class="eyebrow" data-edit="stats-eyebrow">By The Numbers</span>
+          <h2 data-edit="stats-heading">Proven, Measurable Impact</h2>
         </div>
-        <div class="stats">
-          <div class="stat">
-            <div class="num">$2B</div>
-            <div class="lbl">Supported Events</div>
-            <div class="sub">Across high-growth organizations</div>
+        <div class="stats" data-move-group="stat-cards">
+          <div class="stat" data-move="stat1" data-move-in="stat-cards">
+            <div class="num" data-edit="stat1-num">$2B</div>
+            <div class="lbl" data-edit="stat1-lbl">Supported Events</div>
+            <div class="sub" data-edit="stat1-sub">Across high-growth organizations</div>
           </div>
-          <div class="stat">
-            <div class="num">1500+</div>
-            <div class="lbl">Executives &amp; Employees</div>
-            <div class="sub">Annual cohesion training participants</div>
+          <div class="stat" data-move="stat2" data-move-in="stat-cards">
+            <div class="num" data-edit="stat2-num">1500+</div>
+            <div class="lbl" data-edit="stat2-lbl">Executives &amp; Employees</div>
+            <div class="sub" data-edit="stat2-sub">Annual cohesion training participants</div>
           </div>
-          <div class="stat">
-            <div class="num">200%</div>
-            <div class="lbl">YOY Growth</div>
-            <div class="sub">Year-over-year client momentum</div>
+          <div class="stat" data-move="stat3" data-move-in="stat-cards">
+            <div class="num" data-edit="stat3-num">200%</div>
+            <div class="lbl" data-edit="stat3-lbl">YOY Growth</div>
+            <div class="sub" data-edit="stat3-sub">Year-over-year client momentum</div>
           </div>
         </div>
       </div>
@@ -184,11 +185,11 @@
 </section>
 
 <!-- ================= WHAT CLIENTS SAY ================= -->
-<section class="section section--clients" id="clients">
+<section class="section section--clients" id="clients" data-move="clients" data-move-in="page">
   <div class="bg"></div>
   <div class="wrap">
     <div class="head center reveal" style="margin-bottom:2.5rem;">
-      <span class="eyebrow">What Clients Say&hellip;</span>
+      <span class="eyebrow" data-edit="clients-eyebrow">What Clients Say…</span>
     </div>
     <div class="clients-carousel reveal d1" id="clientsCarousel">
       <button type="button" class="client-arrow prev" aria-label="Previous testimonial">&#8249;</button>
@@ -196,23 +197,23 @@
       <div class="client-track">
         <div class="client-slide active">
           <span class="qmark">&ldquo;</span>
-          <blockquote>Christine and the team at White Label Advisors helped us elevate our thinking around people operations. Christine is an original and creative people operations leader. Her perspective enabled us to consider unique and innovative concepts that tie business strategy to the employee experience in ways that benefit both the team and the bottom line. She is consistently at the forefront of people operations strategy and helped bring us along as we determined our own philosophy.</blockquote>
-          <cite>White Label Advisors Client</cite>
+          <blockquote data-edit="quote1">Christine and the team at White Label Advisors helped us elevate our thinking around people operations. Christine is an original and creative people operations leader. Her perspective enabled us to consider unique and innovative concepts that tie business strategy to the employee experience in ways that benefit both the team and the bottom line. She is consistently at the forefront of people operations strategy and helped bring us along as we determined our own philosophy.</blockquote>
+          <cite data-edit="cite1">White Label Advisors Client</cite>
         </div>
         <div class="client-slide">
           <span class="qmark">&ldquo;</span>
-          <blockquote>I had the privilege of sitting in on Christine's inclusion training and after talking to her after the session, I learned the true purpose of this training was to address/replace the traditional Sexual Harassment training that most of us in corporate America have been a part of. Instead of the usual awkward silence that tends to be pervasive in Sexual Harassment training, Christine's inclusion training was full of sincere conversation, real feelings, and lots of participation. Small breakout sessions, group sharing, in a non-hostile environment lead to, instead of the usual awkward silence, lively discussion that I believe ultimately led the group to better results than any traditional Sexual Harassment training would have.</blockquote>
-          <cite>White Label Advisors Client</cite>
+          <blockquote data-edit="quote2">I had the privilege of sitting in on Christine's inclusion training and after talking to her after the session, I learned the true purpose of this training was to address/replace the traditional Sexual Harassment training that most of us in corporate America have been a part of. Instead of the usual awkward silence that tends to be pervasive in Sexual Harassment training, Christine's inclusion training was full of sincere conversation, real feelings, and lots of participation. Small breakout sessions, group sharing, in a non-hostile environment lead to, instead of the usual awkward silence, lively discussion that I believe ultimately led the group to better results than any traditional Sexual Harassment training would have.</blockquote>
+          <cite data-edit="cite2">White Label Advisors Client</cite>
         </div>
         <div class="client-slide">
           <span class="qmark">&ldquo;</span>
-          <blockquote>White Label Advisors came to help us at our organization at the right time, and we have not regretted it! Having Christine and her team's expertise and friendship is something that made a huge difference in my personal and professional life. I am so glad I hired her as she has made tremendous impact for my business.</blockquote>
-          <cite>White Label Advisors Client</cite>
+          <blockquote data-edit="quote3">White Label Advisors came to help us at our organization at the right time, and we have not regretted it! Having Christine and her team's expertise and friendship is something that made a huge difference in my personal and professional life. I am so glad I hired her as she has made tremendous impact for my business.</blockquote>
+          <cite data-edit="cite3">White Label Advisors Client</cite>
         </div>
         <div class="client-slide">
           <span class="qmark">&ldquo;</span>
-          <blockquote>I worked with Christine in an Executive and Leadership training for my own business, and she is an absolute star! As someone who was stepping into being a CEO for the first time, I wanted to ensure I was starting off my leadership role with the right tools, mindsets and systems in place, to really maximize my impact and connection with others. Christine is "in the know" of current workforce needs and greatly helped me understand new ways of thinking to better include, impact and support my team. Although I am new to the Executive world, I can greatly see this type of training benefiting tons of those in leadership positions to modernize and fit the needs of the ever changing workforce. I greatly recommend her leadership training program and cohesion trainings! The White Label team is amazing to work with!</blockquote>
-          <cite>White Label Advisors Client</cite>
+          <blockquote data-edit="quote4">I worked with Christine in an Executive and Leadership training for my own business, and she is an absolute star! As someone who was stepping into being a CEO for the first time, I wanted to ensure I was starting off my leadership role with the right tools, mindsets and systems in place, to really maximize my impact and connection with others. Christine is "in the know" of current workforce needs and greatly helped me understand new ways of thinking to better include, impact and support my team. Although I am new to the Executive world, I can greatly see this type of training benefiting tons of those in leadership positions to modernize and fit the needs of the ever changing workforce. I greatly recommend her leadership training program and cohesion trainings! The White Label team is amazing to work with!</blockquote>
+          <cite data-edit="cite4">White Label Advisors Client</cite>
         </div>
       </div>
       <div class="client-dots" id="clientDots">
@@ -226,24 +227,24 @@
 </section>
 
 <!-- ================= CONTACT ================= -->
-<section class="section section--dark section--contact" id="contact">
+<section class="section section--dark section--contact" id="contact" data-move="contact" data-move-in="page">
   <div class="bg"></div>
   <div class="wrap">
     <div class="contact-grid">
       <div class="contact-info reveal">
-        <span class="eyebrow">Connect</span>
-        <h2 style="font-size:clamp(2rem,4.5vw,3.2rem); margin:.8rem 0 1.8rem; color:var(--cream);">Let's Amplify Your People &amp; Things</h2>
+        <span class="eyebrow" data-edit="contact-eyebrow">Connect</span>
+        <h2 data-edit="contact-heading" style="font-size:clamp(2rem,4.5vw,3.2rem); margin:.8rem 0 1.8rem; color:var(--cream);">Let's Amplify Your People &amp; Things</h2>
         <div class="line">
           <span class="dot"><span>&#9993;</span></span>
-          <div><small>Email</small><a href="mailto:christine@whitelabeladvisors.com">christine@whitelabeladvisors.com</a></div>
+          <div><small>Email</small><a href="mailto:solutions@whitelabeladvisors.com" data-edit="contact-email">solutions@whitelabeladvisors.com</a></div>
         </div>
         <div class="line">
           <span class="dot"><span>&#9742;</span></span>
-          <div><small>Phone</small><a href="tel:+13852078968">385.207.8968</a></div>
+          <div><small>Phone</small><a href="tel:+13852078968" data-edit="contact-phone">385.207.8968</a></div>
         </div>
         <div class="line">
           <span class="dot"><span>&#9679;</span></span>
-          <div><small>Location</small><p>Salt Lake City &middot; Worldwide Service</p></div>
+          <div><small>Location</small><p data-edit="contact-location">Salt Lake City · Worldwide Service</p></div>
         </div>
       </div>
       <form onsubmit="handleSubmit(event)" class="reveal d1">

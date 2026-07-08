@@ -17,7 +17,7 @@
 <!-- ================= NAV ================= -->
 <header class="nav" id="nav">
   <a href="#top" class="brand" aria-label="White Label Advisors home">
-    <img src="assets/logo-twist.png" alt="White Label Advisors" />
+    <img src="assets/logo-twist.png" alt="White Label Advisors" data-edit="logo-header" />
   </a>
   <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
   <nav class="links" id="navLinks">
@@ -25,13 +25,13 @@
     <a href="engagements.html">Engagements</a>
     <a href="blog.html">Blog</a>
     <a href="community.html">Community</a>
-    <a href="#contact" class="cta">Connect</a>
+    <a href="#contact" class="cta" data-edit="nav-connect">Connect</a>
   </nav>
 </header>
 
 <!-- ================= HERO ================= -->
-<section class="hero" id="top" data-move="hero" data-move-in="page">
-  <div class="hero-bg"></div>
+<section class="hero" id="top" data-move="hero" data-move-in="page" data-bg="hero">
+  <div class="hero-bg" data-bg="hero-image"></div>
   <div class="wrap">
     <div class="hero-copy reveal">
       <span class="eyebrow" data-edit="hero-eyebrow">Amplifying People &amp; Things</span>
@@ -39,8 +39,8 @@
       <p data-edit="added-0-428104" style="position: relative; left: 206px; top: -13px;">test</p>
       <p class="lead" data-edit="hero-lead">A Human Capital advisory firm empowering high-growth organizations to unlock their full potential — through their people.</p>
       <div class="actions">
-        <a href="#contact" class="btn btn--solid">Start a Conversation</a>
-        <a href="#modalities" class="btn btn--ghost">Our Modalities</a>
+        <a href="#contact" class="btn btn--solid" data-edit="hero-start">Start a Conversation</a>
+        <a href="#modalities" class="btn btn--ghost" data-edit="hero-modalities">Our Modalities</a>
       </div>
     </div>
   </div>
@@ -48,17 +48,17 @@
 </section>
 
 <!-- ================= ABOUT (THE FIRM) ================= -->
-<section class="section" id="about" data-move="about" data-move-in="page">
+<section class="section" id="about" data-move="about" data-move-in="page" data-bg="about">
   <div class="wrap">
     <div class="about-grid">
       <div class="about-portrait reveal">
-        <div class="photo-carousel" id="aboutCarousel">
-          <img class="active" src="assets/christine-speaking.jpg" alt="Christine Wzorek speaking at a conference Q&amp;A" />
-          <img src="assets/christine-board.jpg" alt="Christine Wzorek leading a boardroom session" />
-          <img src="assets/christine-conference.jpg" alt="Christine Wzorek at the Kinect WeROC conference" />
+        <div class="photo-carousel" id="aboutCarousel" data-edit="about-carousel" data-carousel data-interval="6000" data-transition="slide" data-duration="2200">
+          <img class="active" src="assets/christine-speaking.jpg" alt="Christine Wzorek speaking at a conference Q&amp;A" data-edit="about-photo-1" />
+          <img src="assets/christine-board.jpg" alt="Christine Wzorek leading a boardroom session" data-edit="about-photo-2" />
+          <img src="assets/christine-conference.jpg" alt="Christine Wzorek at the Kinect WeROC conference" data-edit="about-photo-3" />
         </div>
         <div class="frame"></div>
-        <img class="cw" src="assets/monogram-cw-white.png" alt="" aria-hidden="true" />
+        <img class="cw" src="assets/monogram-cw-white.png" alt="" aria-hidden="true" data-edit="about-monogram" />
         <div class="photo-dots" id="aboutDots">
           <button class="active" aria-label="Photo 1"></button>
           <button aria-label="Photo 2"></button>
@@ -83,7 +83,7 @@
 </section>
 
 <!-- ================= MODALITIES ================= -->
-<section class="section section--charcoal2" id="modalities" data-move="modalities" data-move-in="page">
+<section class="section section--charcoal2" id="modalities" data-move="modalities" data-move-in="page" data-bg="modalities">
   <div class="wrap">
     <div class="head center reveal">
       <span class="eyebrow" data-edit="mod-eyebrow">Our Modalities</span>
@@ -115,7 +115,7 @@
 </section>
 
 <!-- ================= APPROACH ================= -->
-<section class="section" id="approach" data-move="approach" data-move-in="page">
+<section class="section" id="approach" data-move="approach" data-move-in="page" data-bg="approach">
   <div class="wrap">
     <div class="head center reveal">
       <span class="eyebrow" data-edit="approach-eyebrow">Our Approach</span>
@@ -153,8 +153,8 @@
 </section>
 
 <!-- ================= STATS ================= -->
-<section class="section section--stats" data-move="stats" data-move-in="page">
-  <div class="stats-bg"></div>
+<section class="section section--stats" data-move="stats" data-move-in="page" data-bg="stats">
+  <div class="stats-bg" data-bg="stats-image"></div>
   <div class="wrap">
     <div class="stats-panel reveal">
       <div class="stats-content">
@@ -185,8 +185,8 @@
 </section>
 
 <!-- ================= WHAT CLIENTS SAY ================= -->
-<section class="section section--clients" id="clients" data-move="clients" data-move-in="page">
-  <div class="bg"></div>
+<section class="section section--clients" id="clients" data-move="clients" data-move-in="page" data-bg="clients">
+  <div class="bg" data-bg="clients-image"></div>
   <div class="wrap">
     <div class="head center reveal" style="margin-bottom:2.5rem;">
       <span class="eyebrow" data-edit="clients-eyebrow">What Clients Say…</span>
@@ -227,8 +227,8 @@
 </section>
 
 <!-- ================= CONTACT ================= -->
-<section class="section section--dark section--contact" id="contact" data-move="contact" data-move-in="page">
-  <div class="bg"></div>
+<section class="section section--dark section--contact" id="contact" data-move="contact" data-move-in="page" data-bg="contact">
+  <div class="bg" data-bg="contact-image"></div>
   <div class="wrap">
     <div class="contact-grid">
       <div class="contact-info reveal">
@@ -254,7 +254,7 @@
         </div>
         <input type="email" name="email" placeholder="Email" required />
         <textarea name="message" rows="5" placeholder="How can we partner with your organization?" required></textarea>
-        <button type="submit" class="btn btn--solid">Send Message</button>
+        <button type="submit" class="btn btn--solid" data-edit="contact-send">Send Message</button>
       </form>
     </div>
   </div>
@@ -263,7 +263,7 @@
 <!-- ================= FOOTER ================= -->
 <footer>
   <div class="wrap">
-    <img class="flogo" src="assets/logo-twist.png" alt="White Label Advisors" />
+    <img class="flogo" src="assets/logo-twist.png" alt="White Label Advisors" data-edit="logo-footer" />
     <p class="tagline">Amplifying People &amp; Things</p>
     <nav class="fnav">
       <a href="#top">Home</a>

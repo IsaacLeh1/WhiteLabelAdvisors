@@ -12,65 +12,66 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/styles.css" />
 </head>
-<body>
+<body data-move-group="page">
 
 <!-- ================= NAV ================= -->
 <header class="nav" id="nav">
   <a href="index.html" class="brand" aria-label="White Label Advisors home">
-    <img src="assets/logo-twist.png" alt="White Label Advisors" />
+    <img src="assets/logo-twist.png" alt="White Label Advisors" data-edit="logo-header" />
   </a>
   <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
   <nav class="links" id="navLinks">
-    <a href="index.html">Home</a>
-    <a href="engagements.html" class="current">Engagements</a>
-    <a href="blog.html">Blog</a>
-    <a href="community.html">Community</a>
-    <a href="index.html#contact" class="cta">Connect</a>
+    <a href="index.html" data-edit="nav-home">Home</a>
+    <a href="engagements.html" class="current" data-edit="nav-engagements">Engagements</a>
+    <a href="blog.html" data-edit="nav-blog">Blog</a>
+    <a href="community.html" data-edit="nav-community">Community</a>
+    <a href="test.html" data-edit="nav-test">Test</a>
+    <a href="index.html#contact" class="cta" data-edit="nav-connect">Connect</a>
   </nav>
 </header>
 
 <!-- ================= PAGE HERO ================= -->
-<section class="page-hero">
-  <div class="bg"></div>
+<section class="page-hero" data-move="page-hero" data-move-in="page" data-bg="page-hero">
+  <div class="bg" data-bg="page-hero-image"></div>
   <div class="wrap reveal">
-    <span class="eyebrow">Engagements</span>
-    <h1>Advisory Services</h1>
-    <p>A comprehensive suite of strategic services designed to elevate your organization's performance and drive sustainable growth — tailored solutions for growth companies in the Middle-Market and Enterprise sectors.</p>
+    <span class="eyebrow" data-edit="hero-eyebrow">Engagements</span>
+    <h1 data-edit="hero-title">Advisory Services</h1>
+    <p data-edit="hero-lead">A comprehensive suite of strategic services designed to elevate your organization's performance and drive sustainable growth — tailored solutions for growth companies in the Middle-Market and Enterprise sectors.</p>
   </div>
 </section>
 
 <!-- ================= ADVISORY SERVICES ================= -->
-<section class="section">
+<section class="section" data-move="services" data-move-in="page" data-bg="services">
   <div class="wrap">
     <div class="head center reveal">
-      <span class="eyebrow">What We Offer</span>
-      <h2>Four Ways to Partner</h2>
-      <p>Delivering immediate and long-term solutions — with transparency, customization, and measurable outcomes linked to financial success.</p>
+      <span class="eyebrow" data-edit="offer-eyebrow">What We Offer</span>
+      <h2 data-edit="offer-heading">Four Ways to Partner</h2>
+      <p data-edit="offer-intro">Delivering immediate and long-term solutions — with transparency, customization, and measurable outcomes linked to financial success.</p>
     </div>
-    <div class="svc-grid engage-grid">
-      <div class="svc reveal">
+    <div class="svc-grid engage-grid" data-move-group="service-cards">
+      <div class="svc reveal" data-move="svc-leadership" data-move-in="service-cards">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <span class="tag">Leadership</span>
-        <h3>Board &amp; Executive</h3>
-        <p>People-strategy advisement for boards and C-suite leaders navigating growth, transition, and transformation — aligning leadership with business strategy.</p>
+        <span class="tag" data-edit="svc1-tag">Leadership</span>
+        <h3 data-edit="svc1-title">Board &amp; Executive</h3>
+        <p data-edit="svc1-body">People-strategy advisement for boards and C-suite leaders navigating growth, transition, and transformation — aligning leadership with business strategy.</p>
       </div>
-      <div class="svc reveal d1">
+      <div class="svc reveal d1" data-move="svc-ma" data-move-in="service-cards">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M6 21V9a9 9 0 0 0 9 9"/></svg></div>
-        <span class="tag">Transactions</span>
-        <h3>Merger &amp; Acquisition</h3>
-        <p>Human Capital due diligence and integration that makes people a core asset in your M&amp;A strategy — protecting value through every phase of the deal.</p>
+        <span class="tag" data-edit="svc2-tag">Transactions</span>
+        <h3 data-edit="svc2-title">Merger &amp; Acquisition</h3>
+        <p data-edit="svc2-body">Human Capital due diligence and integration that makes people a core asset in your M&amp;A strategy — protecting value through every phase of the deal.</p>
       </div>
-      <div class="svc reveal d1">
+      <div class="svc reveal d1" data-move="svc-pe" data-move-in="service-cards">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div>
-        <span class="tag">Portfolio</span>
-        <h3>Private Equity</h3>
-        <p>Portfolio-wide talent, culture, and value-creation strategy that drives returns for investors and operators across the investment lifecycle.</p>
+        <span class="tag" data-edit="svc3-tag">Portfolio</span>
+        <h3 data-edit="svc3-title">Private Equity</h3>
+        <p data-edit="svc3-body">Portfolio-wide talent, culture, and value-creation strategy that drives returns for investors and operators across the investment lifecycle.</p>
       </div>
-      <div class="svc reveal d2">
+      <div class="svc reveal d2" data-move="svc-training" data-move-in="service-cards">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
-        <span class="tag">Development</span>
-        <h3>Training &amp; Coaching</h3>
-        <p>Leadership development, executive coaching, and cohesion training that modernize teams for the Future of Work.</p>
+        <span class="tag" data-edit="svc4-tag">Development</span>
+        <h3 data-edit="svc4-title">Training &amp; Coaching</h3>
+        <p data-edit="svc4-body">Leadership development, executive coaching, and cohesion training that modernize teams for the Future of Work.</p>
       </div>
     </div>
     <p class="pill-tag" style="margin-top:3rem;">Simple. Sophisticated. Solutions.</p>
@@ -78,16 +79,16 @@
 </section>
 
 <!-- ================= WHO WE SERVE ================= -->
-<section class="section section--charcoal2" id="serve">
+<section class="section section--charcoal2" id="serve" data-move="serve" data-move-in="page" data-bg="serve">
   <div class="wrap">
     <div class="head center reveal">
-      <span class="eyebrow">Who We Serve</span>
-      <h2>Partners in High-Growth Industries</h2>
-      <p>We partner with leaders building human-first organizations across a wide range of sectors.</p>
+      <span class="eyebrow" data-edit="serve-eyebrow">Who We Serve</span>
+      <h2 data-edit="serve-heading">Partners in High-Growth Industries</h2>
+      <p data-edit="serve-intro">We partner with leaders building human-first organizations across a wide range of sectors.</p>
     </div>
-    <div class="serve-groups">
-      <div class="serve-col reveal">
-        <h3>Audience</h3>
+    <div class="serve-groups" data-move-group="serve-cols">
+      <div class="serve-col reveal" data-move="serve-audience" data-move-in="serve-cols">
+        <h3 data-edit="serve-audience-title">Audience</h3>
         <div class="industries">
           <span>C-Suite Executives</span>
           <span>Women in Business</span>
@@ -95,8 +96,8 @@
           <span>HR Professionals</span>
         </div>
       </div>
-      <div class="serve-col reveal d1">
-        <h3>Industries</h3>
+      <div class="serve-col reveal d1" data-move="serve-industries" data-move-in="serve-cols">
+        <h3 data-edit="serve-industries-title">Industries</h3>
         <div class="industries">
           <span>Aerospace</span><span>AI Technology</span><span>Life Sciences</span>
           <span>Data Privacy</span><span>Digital Marketing</span><span>EdTech</span>
@@ -109,25 +110,26 @@
 </section>
 
 <!-- ================= CTA STRIP ================= -->
-<section class="section section--dark impact">
-  <div class="bg"></div>
+<section class="section section--dark impact" data-move="cta" data-move-in="page" data-bg="cta">
+  <div class="bg" data-bg="cta-image"></div>
   <div class="wrap reveal">
-    <span class="eyebrow">Let's Begin</span>
-    <blockquote style="margin-top:1.4rem;">Ready to <span class="hl">amplify your people &amp; things?</span></blockquote>
-    <a href="index.html#contact" class="btn btn--solid" style="margin-top:1rem;">Contact Us</a>
+    <span class="eyebrow" data-edit="cta-eyebrow">Let's Begin</span>
+    <blockquote data-edit="cta-quote" style="margin-top:1.4rem;">Ready to <span class="hl">amplify your people &amp; things?</span></blockquote>
+    <a href="index.html#contact" class="btn btn--solid" style="margin-top:1rem;" data-edit="cta-contact">Contact Us</a>
   </div>
 </section>
 
 <!-- ================= FOOTER ================= -->
 <footer>
   <div class="wrap">
-    <img class="flogo" src="assets/logo-twist.png" alt="White Label Advisors" />
+    <img class="flogo" src="assets/logo-twist.png" alt="White Label Advisors" data-edit="logo-footer" />
     <p class="tagline">Amplifying People &amp; Things</p>
     <nav class="fnav">
       <a href="index.html">Home</a>
       <a href="engagements.html">Engagements</a>
       <a href="blog.html">Blog</a>
       <a href="community.html">Community</a>
+      <a href="test.html">Test</a>
       <a href="index.html#contact">Connect</a>
     </nav>
     <p class="copy">&copy; 2026 White Label Advisors, Inc. &nbsp;|&nbsp; All rights reserved. &nbsp;|&nbsp; Salt Lake City Based, World Wide Service.</p>
